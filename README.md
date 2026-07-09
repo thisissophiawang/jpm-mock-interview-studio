@@ -2,6 +2,12 @@
 
 A GitHub Pages-ready mock interview page for the J.P. Morgan Software Engineer - Application Support Payments Technology Analyst interview.
 
+## About
+
+This project is a personal mock interview and study tool built for practicing application support, payments technology, behavioral interview, and technical storytelling questions.
+
+It does not include, reproduce, or disclose any real interview questions, private recruiter communication, confidential company information, internal materials, or non-public interview details. All prompts and answers are self-created practice content based on public job-description themes, general application-support concepts, and personal resume/project experience.
+
 ## Preview
 
 ### Home and Story Bank
