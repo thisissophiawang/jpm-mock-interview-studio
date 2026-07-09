@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JPMC Mock Interview Studio</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">JPMC Payments Technology · Analyst</p>
+        <div class="brand-title">
+          <span class="jpm-logo" aria-label="J.P. Morgan">J.P. Morgan</span>
+          <h1>Mock Interview Studio</h1>
+        </div>
+      </div>
+      <div class="status-strip" aria-label="Interview focus">
+        <span>Regional Leader</span>
+        <span>In Person</span>
+        <span>Application Support</span>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar" aria-label="Practice controls">
+        <section class="panel profile-panel">
+          <div class="portrait" aria-hidden="true">SW</div>
+          <div>
+            <h2>Sophia Wang</h2>
+            <p>CS · banking ops · risk analytics · fintech support</p>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>Mode</h2>
+          <div class="segmented" role="tablist" aria-label="Practice mode">
+            <button class="mode-button active" data-mode="leader">Leader</button>
+            <button class="mode-button" data-mode="technical">Tech</button>
+            <button class="mode-button" data-mode="bq">BQ</button>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>Question Bank</h2>
+          <div class="question-list" id="questionList"></div>
+        </section>
+
+        <section class="panel">
+          <h2>Story Bank</h2>
+          <div class="story-list" id="storyList"></div>
+        </section>
+      </aside>
+
+      <section class="workspace">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Forked, remixed, shipped</p>
+            <h2>Practice the second round like a production conversation.</h2>
+            <p>
+              Built from the bq-skill idea: JD signals, story bank, STAR structure,
+              and one question at a time.
+            </p>
+          </div>
+          <img src="assets/payment-system.png" alt="Payment system flow visual">
+        </section>
+
+        <section class="interview-grid">
+          <article class="panel question-card">
+            <div class="card-head">
+              <div>
+                <p class="eyebrow" id="questionType">Regional Leader</p>
+                <p class="step-indicator" id="stepIndicator">Question 1 of 3</p>
+                <h2 id="questionTitle">Tell me about yourself.</h2>
+              </div>
+              <div class="timer" aria-live="polite">
+                <span id="timerDisplay">02:00</span>
+                <button id="timerButton" type="button">Start</button>
+              </div>
+            </div>
+
+            <div class="prompt-box">
+              <h3>What this is testing</h3>
+              <p id="questionSignal"></p>
+            </div>
+
+            <div class="star-grid" aria-label="STAR answer guide">
+              <div>
+                <span>S</span>
+                <p id="starS"></p>
+              </div>
+              <div>
+                <span>T</span>
+                <p id="starT"></p>
+              </div>
+              <div>
+                <span>A</span>
+                <p id="starA"></p>
+              </div>
+              <div>
+                <span>R</span>
+                <p id="starR"></p>
+              </div>
+            </div>
+
+            <div class="answer-shell">
+              <div class="answer-columns">
+                <div>
+                  <label for="answerNotes">Your speaking notes</label>
+                  <textarea id="answerNotes" placeholder="Draft your answer in bullets, then speak it out loud."></textarea>
+                </div>
+                <div>
+                  <div class="model-head">
+                    <h3>Model Answer</h3>
+                    <button id="loadModel" type="button">Load</button>
+                  </div>
+                  <div class="model-answer" id="modelAnswer">Load the model answer after you try your own version.</div>
+                </div>
+              </div>
+              <div class="answer-actions">
+                <button id="saveNotes" type="button">Save Notes</button>
+                <button id="clearNotes" type="button">Clear Draft</button>
+                <button id="clearSaved" type="button">Clear Saved</button>
+                <span id="saveStatus" aria-live="polite"></span>
+              </div>
+              <div class="practice-log">
+                <div class="log-head">
+                  <h3>Practice Log</h3>
+                  <span id="logCount">0 saved</span>
+                </div>
+                <div id="savedNotesList" class="saved-notes-list">No saved notes yet.</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel coach-card">
+            <h2>Coach Checklist</h2>
+            <label><input type="checkbox"> Starts with the business situation</label>
+            <label><input type="checkbox"> Names your personal action</label>
+            <label><input type="checkbox"> Mentions SQL, logs, monitoring, or workflow evidence</label>
+            <label><input type="checkbox"> Explains risk, client, or operational impact</label>
+            <label><input type="checkbox"> Ends with learning or prevention</label>
+
+            <div class="score-box">
+              <span>Target tone</span>
+              <strong>Calm, structured, production-aware</strong>
+            </div>
+          </article>
+        </section>
+
+        <section class="visual-grid">
+          <article class="panel visual-panel">
+            <h2>Incident Flow</h2>
+            <img src="assets/incident-map.png" alt="Incident troubleshooting map">
+          </article>
+          <article class="panel visual-panel">
+            <h2>Story Mapping</h2>
+            <img src="assets/story-map.png" alt="BAML to JPMC story mapping">
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
