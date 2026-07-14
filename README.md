@@ -12,7 +12,7 @@ It does not include, reproduce, or disclose any real interview questions, privat
 
 ### Home and Story Bank
 
-![JPMC Mock Interview Studio home screen](assets/readme/preview-home.png)
+![JPMC Mock Interview Studio home screen](assets/readme/preview-home-v2.png)
 
 ### Mock Practice Workspace
 
