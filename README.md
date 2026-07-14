@@ -1,6 +1,6 @@
 # JPMC Mock Interview Studio
 
-A GitHub Pages-ready mock interview page for the J.P. Morgan Software Engineer - Application Support Payments Technology Analyst interview.
+A GitHub Pages-ready mock interview page for the J.P. Morgan Software Engineer interview.
 
 ## About
 
